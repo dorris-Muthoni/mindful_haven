@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- team section -->
+  <section class="team_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Meet Our Team
+        </h2>
+        <p>
+          Our team of experienced professionals is dedicated to supporting you on your mental wellness journey.
+            Each member brings expertise in various aspects of mental health and well-being, ensuring that we can provide the best care
+            and support to our clients.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/t1.jpg' %}" alt="Martin Anderson">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Martin Anderson
+              </h5>
+              <h6>
+                Senior Therapist
+              </h6>
+              <p>Martin specializes in individual counseling, helping clients navigate anxiety, depression, and life transitions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/t2.jpg' %}" alt="Denny Butler">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Denny Butler
+              </h5>
+              <h6>
+                Counselor
+              </h6>
+              <p>Denny is an expert in group therapy and offers support for those dealing with stress and relationship challenges.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/t3.jpg' %}" alt="Nathan Mcpherson">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Nathan Mcpherson
+              </h5>
+              <h6>
+                Wellness Coach
+              </h6>
+              <p>Nathan helps clients with mindfulness, stress management, and achieving overall mental and physical balance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="#">
+          View All Team Members
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+{% endblock %}

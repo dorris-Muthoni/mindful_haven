@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- about section -->
+  <section class="about_section layout_padding" style="background-image: url('{% static 'images/gtp.webp' %}'); background-size: cover; background-position: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="{% static 'images/about-img.jpg' %}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Who Are We?
+              </h2>
+            </div>
+            <p>
+              Mindful Haven is a dedicated mental wellness platform committed to helping individuals achieve emotional resilience and personal growth.
+                Our compassionate team of skilled therapists provides personalized, accessible care in a safe and non-judgmental space.
+                At Mindful Haven, we believe in empowering you to overcome challenges and thrive.
+            </p>
+            <div class="btn-box">
+              <a href="consultation.html" class="btn-book">Book Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+{% endblock %}
